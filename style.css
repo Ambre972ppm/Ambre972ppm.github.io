@@ -1,0 +1,191 @@
+/*Configuration Css Mobile*/
+@media all and (max-width: 480px)
+{
+    body
+    {
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        color: black;
+        width: 480px;
+        margin: 0;
+    }
+    a
+    {
+        text-decoration: none;
+    }
+    /*Header*/
+    .top
+    {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 100%;
+        align-items: center;
+        padding: 2rem;
+        padding-bottom: 0rem;
+    }
+    header ul
+    {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 100%;
+        list-style-type: none;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    header li
+    {
+        margin: 0;
+        padding: 2rem;
+        border-bottom: 3px solid #F2F2F2;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .navlodging
+    {
+        border-bottom-color: #0065FC;
+    }
+    .navactivity:hover
+    {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+    /*Header*/
+    /*Main*/
+    main
+    {
+        margin: 2rem;
+    }
+    /*Main*/
+}
+/*Configuration Css Mobile*/
+
+/*Configuration Css Tablette*/
+@media (min-width: 480px) and (max-width: 768px)
+{
+    body
+    {
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        color: black;
+        width: 768px;
+        margin: 0rem;
+    }
+    a
+    {
+        text-decoration: none;
+    }
+    /*Header*/
+    .top
+    {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 100%;
+        align-items: center;
+        padding: 2rem;
+        padding-bottom: 0rem;
+    }
+    header ul
+    {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 100%;
+        list-style-type: none;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    header li
+    {
+        margin: 0;
+        padding: 2rem;
+        border-bottom: 3px solid #F2F2F2;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .navlodging
+    {
+        border-bottom-color: #0065FC;
+    }
+    .navactivity:hover
+    {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+    }
+    /*Header*/
+    /*Main*/
+    main
+    {
+        margin: 2rem;
+    }
+    /*Main*/
+}
+/*Configuration Css Tablette*/
+
+/*Configuration Css Desktop*/
+@media (min-width: 769px)
+{
+    body
+    {
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        color: black;
+        width: 1600px;
+        margin: 0rem;
+    }
+    a
+    {
+        text-decoration: none;
+    }
+    /*Header*/
+    header
+    {
+        display: flex;
+        padding-top: 0;
+        justify-content: space-between;
+    }
+    .top
+    {
+        width: 300rem;
+        padding: 2rem;
+        justify-content: space-between;
+    }
+    header ul 
+   {
+       margin: 0;
+       list-style-type: none;
+       display: flex;
+       align-content: flex-start;
+   }
+   header li
+    {
+        padding: 3rem;
+        margin: 0;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .navactivity:hover
+    {
+        color: #0065FC;
+        border-top: 3px solid #0065FC;
+    }
+    .navlodging
+    {
+        border-top: 3px solid #0065FC ;
+    }
+    #SignUp
+    {
+        float: right;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
+    }
+    /*Header*/
+    /*Main*/
+    main
+    {
+        margin: 2rem;
+    }
+    /*Main*/
+}
+/*Configuration Css Desktop*/
