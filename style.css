@@ -137,6 +137,7 @@
     .filtres:hover
     {
         background-color: #DEEBFF;
+        border-radius: 2rem;
     }
     /*Filtres*/
     /*info*/
@@ -305,6 +306,7 @@
     .filtres:hover
     {
         background-color: #DEEBFF;
+        border-radius: 2rem;
     }
     /*Filtres*/
     /*info*/
