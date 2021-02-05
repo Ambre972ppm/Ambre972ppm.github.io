@@ -20,6 +20,7 @@
           <ul>
               <li class="navlodging"><a href="#LODGING" style="color: #0065FC;">Hébergements</a></li>
               <li class="navactivity"><a href="#ACTIVITY">Activités</a></li>
+              <li class="SignUp"><a href="#" style="color: #0065FC;"><strong>S'inscrire</strong></a></li>
           </ul>
       </nav>
 </header>
@@ -33,27 +34,25 @@
     <p>En plein centre ville ou en pleine nature</p>
     <!--search bar start-->
     <div class="searchbar">
-        <i class="fas fa-map-marker-alt"></i>
+        <i class="fas fa-map-marker-alt" id="positionicon"></i>
         <input type="search" class="search-bar"  placeholder="Marseille, France" name="Place" aria-label="Search through site content">
-        <button class="search-bar"><i class="fas fa-search"></i></button>
+        <button class="search-bar-icon"><i class="fas fa-search"></i></button>
+        <button class="search-bar-textbutton">Rechercher</button>
     </div>
     <!--search bar end-->
     <!--search filters start-->
+    <div class="Filtres">
         <h3>Filtres</h3>
         <nav id="filtres">
-            <i class="fas fa-money-bill-wave"></i>
-            <div class="filtres"><a href="#">Économique</a></div>
-            <i class="fas fa-child"></i>
-            <div class="filtres"><a href="#">Familial</a></div>
-            <i class="fas fa-heart"></i>
-            <div class="filtres"><a href="#">Romantique</a></div>
-            <i class="fas fa-dog"></i>
-            <div class="filtres"><a href="#">Animaux autorisés</a></div>
+            <div class="filtres"><i class="fas fa-money-bill-wave"></i><a href="#">Économique</a></div>
+            <div class="filtres"><i class="fas fa-child"></i><a href="#">Familial</a></div>
+            <div class="filtres"><i class="fas fa-heart"></i><a href="#">Romantique</a></div>
+            <div class="filtres"><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></div>
         </nav>
+    </div>
     <!--search filters end-->
     <!--Info Start-->
-    <i class="fas fa-info info"></i>
-    <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
+    <p class="info"><i class="fas fa-info info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     <!--Info End-->
 </section>
 <!--SEARCH SECTION END-->

@@ -1,16 +1,25 @@
 /*Configuration Css Mobile*/
 @media all and (max-width: 480px)
 {
+    .SignUp
+    {
+        display: none;
+    }
+    .search-bar-textbutton
+    {
+        display: none;
+    }
     body
     {
         font-family: 'Raleway', Arial, Helvetica, sans-serif;
         color: black;
-        width: 480px;
+        width: 400px;
         margin: 0;
     }
     a
     {
         text-decoration: none;
+        color: black;
     }
     /*Header*/
     .top
@@ -19,6 +28,7 @@
         grid-template-columns: 2fr 2fr;
         grid-template-rows: 100%;
         align-items: center;
+        justify-content: space-between;
         padding: 2rem;
         padding-bottom: 0rem;
     }
@@ -56,13 +66,118 @@
     {
         margin: 2rem;
     }
+    /*Search Section*/
+    /*search bar*/
+    .searchbar
+    {
+        display: flex;
+    }
+    #positionicon
+    {
+        padding: 1.4rem;
+        background-color: #F2F2F2;
+        position: sticky;
+        border-top-left-radius: 1.2rem;  
+        border-bottom-left-radius: 1.2rem;
+    }
+    .search-bar
+    {
+        padding: 1.2rem;
+        border: 1px solid #F2F2F2;
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .search-bar-icon
+    {
+        padding: 1.4rem;
+        background-color: #0065FC;
+        border: none;
+        border-top-right-radius: 1.2rem;  
+        border-bottom-right-radius: 1.2rem;
+        position: sticky;
+        color: white;
+    }
+    /*search bar*/
+    /*Filtres*/
+    #filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .filtres
+    {
+        display: flex;
+        margin: 5px;
+        margin-left: 0px;
+    }
+    .filtres i
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 2rem;
+        background-color: #DEEBFF;
+        color: #0065FC;
+        cursor: pointer;
+        position: sticky;
+    }
+    .filtres a
+    {
+        border: 2px solid lightgrey;
+        padding: 1rem;
+        padding-left: 3rem;
+        border-radius: 2rem;
+        margin-left: -3rem;
+        font-weight: bold;
+    }
+    .filtres:hover
+    {
+        background-color: #DEEBFF;
+    }
+    /*Filtres*/
+    /*info*/
+    .info
+    {
+        display: flex;
+        align-items: center;
+    }
+    .info i
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid lightgrey;
+        width: 2rem;
+        height: 2rem;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 2rem;
+        color: #0065FC;
+        margin: 5px;
+    }
+    /*info*/
+    /*Search Section*/
     /*Main*/
 }
 /*Configuration Css Mobile*/
 
+
+
 /*Configuration Css Tablette*/
 @media (min-width: 480px) and (max-width: 768px)
 {
+    .search-bar-icon
+    {
+        display: none;
+    }
+    .SignUp
+    {
+        display: none;
+    }
     body
     {
         font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -73,6 +188,7 @@
     a
     {
         text-decoration: none;
+        color: black;
     }
     /*Header*/
     .top
@@ -118,23 +234,129 @@
     {
         margin: 2rem;
     }
+    /*Search Section*/
+    /*search bar*/
+    .searchbar
+    {
+        display: flex;
+    }
+    #positionicon
+    {
+        padding: 1.4rem;
+        background-color: #F2F2F2;
+        position: sticky;
+        border-top-left-radius: 1.2rem;  
+        border-bottom-left-radius: 1.2rem;
+    }
+    .search-bar
+    {
+        padding: 1.2rem;
+        border: 1px solid #F2F2F2;
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .search-bar-textbutton
+    {
+        padding: 1.4rem;
+        background-color: #0065FC;
+        border: none;
+        border-top-right-radius: 1.2rem;  
+        border-bottom-right-radius: 1.2rem;
+        position: sticky;
+        color: white;
+    }
+    /*search bar*/
+    /*Filtres*/
+    #filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .filtres
+    {
+        display: flex;
+        margin: 5px;
+        margin-left: 0px;
+    }
+    .filtres i
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 2rem;
+        background-color: #DEEBFF;
+        color: #0065FC;
+        cursor: pointer;
+        position: sticky;
+    }
+    .filtres a
+    {
+        border: 2px solid lightgrey;
+        padding: 1rem;
+        padding-left: 3rem;
+        border-radius: 2rem;
+        margin-left: -3rem;
+        font-weight: bold;
+    }
+    .filtres:hover
+    {
+        background-color: #DEEBFF;
+    }
+    /*Filtres*/
+    /*info*/
+    .info
+    {
+        display: flex;
+        align-items: center;
+    }
+    .info i
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid lightgrey;
+        width: 2rem;
+        height: 2rem;
+        padding-left: 1px;
+        padding-right: 1px;
+        border-radius: 2rem;
+        color: #0065FC;
+        margin: 5px;
+    }
+    /*info*/
+    /*Search Section*/
     /*Main*/
 }
 /*Configuration Css Tablette*/
 
+
+
 /*Configuration Css Desktop*/
 @media (min-width: 769px)
 {
+    #SignUp
+    {
+        display: none;
+    }
+    .search-bar-icon
+    {
+        display: none;
+    }
     body
     {
         font-family: 'Raleway', Arial, Helvetica, sans-serif;
         color: black;
-        width: 1600px;
+        width: 1280px;
         margin: 0rem;
     }
     a
     {
         text-decoration: none;
+        color: black;
     }
     /*Header*/
     header
@@ -186,6 +408,110 @@
     {
         margin: 2rem;
     }
+    /*Search Section*/
+    /*search bar*/
+    .searchbar
+    {
+        display: flex;
+    }
+    #positionicon
+    {
+        padding: 1.4rem;
+        background-color: #F2F2F2;
+        position: sticky;
+        border-top-left-radius: 1.2rem;  
+        border-bottom-left-radius: 1.2rem;
+    }
+    .search-bar
+    {
+        padding: 1.2rem;
+        border: 1px solid #F2F2F2;
+        font-family: 'Raleway', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .search-bar-textbutton
+    {
+        padding: 1.4rem;
+        background-color: #0065FC;
+        border: none;
+        border-top-right-radius: 1.2rem;  
+        border-bottom-right-radius: 1.2rem;
+        position: sticky;
+        color: white;
+    }
+    /*search bar*/
+    /*Filtres*/
+    #filtres
+    {
+        display: flex;
+        margin-left: 2rem;
+    }
+    .Filtres
+    {
+        display: flex;
+    }
+    .Filtres h3
+    {
+        margin-top: 49px;
+        margin-bottom: 49px;
+    }
+    .filtres
+    {
+        display: flex;
+        margin: 2rem;
+        margin-left: 0px;
+    }
+    .filtres i
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 2rem;
+        background-color: #DEEBFF;
+        color: #0065FC;
+        cursor: pointer;
+        position: sticky;
+    }
+    .filtres a
+    {
+        border: 2px solid lightgrey;
+        padding: 1rem;
+        padding-left: 3rem;
+        border-radius: 2rem;
+        margin-left: -3rem;
+        font-weight: bold;
+    }
+    .filtres:hover
+    {
+        background-color: #DEEBFF;
+        border-radius: 2rem;
+    }
+    /*Filtres*/
+    /*info*/
+    .info
+    {
+        display: flex;
+        align-items: center;
+    }
+    .info i
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid lightgrey;
+        width: 2rem;
+        height: 2rem;
+        padding-left: 1px;
+        padding-right: 1px;
+        border-radius: 2rem;
+        color: #0065FC;
+        margin: 5px;
+    }
+    /*info*/
+    /*Search Section*/
     /*Main*/
 }
 /*Configuration Css Desktop*/
