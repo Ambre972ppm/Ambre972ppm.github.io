@@ -13,7 +13,7 @@
     {
         font-family: 'Raleway', Arial, Helvetica, sans-serif;
         color: black;
-        width: 400px;
+        width: 380px;
         margin: 0;
     }
     a
@@ -21,21 +21,30 @@
         text-decoration: none;
         color: black;
     }
+    .blue
+    {
+        color: #0065FC;
+    }
+    .grey
+    {
+        color: #F2F2F2;
+    }
     /*Header*/
     .top
     {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 20% 20%;
         grid-template-rows: 100%;
+        gap: 60%;
         align-items: center;
         justify-content: space-between;
-        padding: 2rem;
-        padding-bottom: 0rem;
+        padding: 1.5rem;
+        padding-bottom: 0;
     }
     header ul
     {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 100%;
         list-style-type: none;
         align-items: center;
@@ -45,7 +54,10 @@
     header li
     {
         margin: 0;
-        padding: 2rem;
+        padding-top: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
         border-bottom: 3px solid #F2F2F2;
         align-content: center;
         justify-content: center;
@@ -62,15 +74,15 @@
     }
     /*Header*/
     /*Main*/
-    main
-    {
-        margin: 2rem;
-    }
     /*Search Section*/
+    #SEARCH
+    { margin: 1rem;}
     /*search bar*/
     .searchbar
     {
         display: flex;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
     #positionicon
     {
@@ -139,6 +151,10 @@
         background-color: #DEEBFF;
         border-radius: 2rem;
     }
+    .Filtres
+    {
+        margin-bottom: 2rem;
+    }
     /*Filtres*/
     /*info*/
     .info
@@ -162,7 +178,158 @@
     }
     /*info*/
     /*Search Section*/
+
+    /*Popular Section*/
+    #POPULAR
+    {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #F2F2F2;
+    }
+    #popular-title i
+    {
+        font-size: 25px;
+    }
+    #popular-title
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #POPULAR img
+    {
+        border-radius: 1.2rem 0 0 1.2rem;
+        object-fit: cover;
+        height: 100%;
+
+    }
+    .popularcard
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Pcard 
+    {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        border-radius: 1.2rem;
+        border: 0.3rem solid transparent;
+        width: 340px;
+        height: 150px;
+    }
+    .Pcard:hover 
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .Pcardcontainer
+    {
+        margin: 1rem;
+    }
+    /*Popular Section*/
+    /*Lodging Section*/
+    #LODGING
+    {
+        padding: 1.5rem;
+    }
+    #LODGING img
+    {
+        border-radius: 1.2rem 1.2rem 0 0;
+        width: 345px;
+        height: 120px;
+        object-fit: cover;
+    }
+    .lodgingcard
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Lcard 
+    {
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        border-radius: 1.2rem;
+        border: 0.3rem solid transparent;
+        width: 350px;
+        height: 220px;
+    }
+    .Lcard:hover 
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .Lcardcontainer
+    {
+        position: absolute;
+        align-content: center;
+        line-height: 3px;
+    }
+    /*Lodging Section*/
+    /*Activity Section*/
+    #ACTIVITY
+    {
+        padding: 1.5rem;
+    }
+    #ACTIVITY img
+    {
+        border-radius: 1.2rem 1.2rem 0 0;
+        width: 345px;
+        height: 120px;
+        object-fit: cover;
+    }
+    .activitycard
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Acard 
+    {
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        border-radius: 1.2rem;
+        width: 350px;
+        height: 180px;
+    }
+    .Acard:hover 
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .Acardcontainer
+    {
+        position: absolute;
+        align-items: center;
+        align-content: center;
+        padding-left: 1rem;
+    }
+    /*Activity Section*/
     /*Main*/
+
+    /*footer*/
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        background-color: #F2F2F2;
+        justify-content: space-between;
+    }
+    /*footer*/
+
 }
 /*Configuration Css Mobile*/
 
@@ -190,6 +357,14 @@
     {
         text-decoration: none;
         color: black;
+    }
+    .blue
+    {
+        color: #0065FC;
+    }
+    .grey
+    {
+        color: #F2F2F2;
     }
     /*Header*/
     .top
@@ -331,11 +506,120 @@
     }
     /*info*/
     /*Search Section*/
+    
+    /*Popular Section*/
+    #POPULAR
+    {
+        padding: 1rem;
+        margin: 1rem;
+        width: 750px;
+        background-color: #F2F2F2;
+        border-radius: 1.2rem;
+        position: relative;
+    }
+    .popular
+    {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+    #popular-title i
+    {
+        font-size: 25px;
+    }
+    #popular-title
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #POPULAR img
+    {
+        border-radius: 1.2rem 0 0 1.2rem;
+        object-fit: cover;
+        height: 100%;
+
+    }
+    .popularcard
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Pcard 
+    {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        border-radius: 1.2rem;
+        border: 0.3rem solid transparent;
+        width: 340px;
+        height: 150px;
+    }
+    .Pcard:hover 
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .Pcardcontainer
+    {
+        margin: 1rem;
+    }
+    /*Popular Section*/
+    /*Lodging Section*/
+    #LODGING
+    {
+        background-color: #F2F2F2;
+        border-radius: 1.2rem;
+        width: 100%;
+        height: 750px;
+        padding: 1rem;
+        margin: 1rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .lodging
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 20rem);
+    }
+    #LODGING img
+    {
+        border-radius: 1.2rem 1.2rem 0 0;
+        width: 12rem;
+        height: 7rem;
+        object-fit: cover;
+        
+    }
+    .Lcard 
+    {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        border-radius: 1.2rem;
+        border: 0.3rem solid transparent;
+        width: 200px;
+        height: 180px;
+        position: absolute;
+    }
+    .Lcard:hover 
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .Lcardcontainer 
+    {
+        position: absolute;
+        line-height: 3px;
+    }
+    /*Lodging Section*/
     /*Main*/
 }
 /*Configuration Css Tablette*/
-
-
 
 /*Configuration Css Desktop*/
 @media (min-width: 769px)
@@ -359,6 +643,14 @@
     {
         text-decoration: none;
         color: black;
+    }
+    .blue
+    {
+        color: #0065FC;
+    }
+    .grey
+    {
+        color: #F2F2F2;
     }
     /*Header*/
     header
@@ -514,6 +806,122 @@
     }
     /*info*/
     /*Search Section*/
+    .lodging-container
+        {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+    /*Popular Section*/
+    #POPULAR
+    {
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #F2F2F2;
+        border-radius: 1.2rem;
+        width: 30%;
+        height: 700px;
+        position: relative;
+    }
+    #popular-title i
+    {
+        font-size: 25px;
+    }
+    #popular-title
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #POPULAR img
+    {
+        border-radius: 1.2rem 0 0 1.2rem;
+        object-fit: cover;
+        height: 100%;
+
+    }
+    .popularcard
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Pcard 
+    {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        border-radius: 1.2rem;
+        border: 0.3rem solid transparent;
+        width: 340px;
+        height: 150px;
+    }
+    .Pcard:hover 
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .Pcardcontainer
+    {
+        margin: 1rem;
+    }
+    /*Popular Section*/
+
+    /*Lodging Section*/
+    #LODGING
+    {
+        background-color: #F2F2F2;
+        border-radius: 1.2rem;
+        width: 60%;
+        height: 700px;
+        padding: 1rem;
+        margin: 1rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .lodging
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 20rem);
+    }
+    #LODGING img
+    {
+        border-radius: 1.2rem 1.2rem 0 0;
+        width: 12rem;
+        height: 7rem;
+        object-fit: cover;
+        
+    }
+    .Lcard 
+    {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        border-radius: 1.2rem;
+        border: 0.3rem solid transparent;
+        width: 200px;
+        height: 180px;
+        position: absolute;
+    }
+    .Lcard:hover 
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .Lcardcontainer 
+    {
+        position: absolute;
+        line-height: 3px;
+    }
+    /*Lodging Section*/
     /*Main*/
 }
 /*Configuration Css Desktop*/
