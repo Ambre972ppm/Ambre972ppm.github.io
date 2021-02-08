@@ -77,7 +77,10 @@
     /*Main*/
     /*Search Section*/
     #SEARCH
-    { margin: 1rem;}
+    { 
+        margin: 1rem;
+        width: 100%;
+    }
     /*search bar*/
     .searchbar
     {
@@ -171,8 +174,8 @@
         border: 1px solid lightgrey;
         width: 2rem;
         height: 2rem;
-        padding-left: 4px;
-        padding-right: 4px;
+        padding-left: 2px;
+        padding-right: 2px;
         border-radius: 2rem;
         color: #0065FC;
         margin: 5px;
@@ -185,6 +188,8 @@
     {
         margin-top: 2rem;
         padding: 1.5rem;
+        margin: 0;
+        width: 100%;
         background-color: #F2F2F2;
     }
     #popular-title i
@@ -202,7 +207,6 @@
         border-radius: 1.2rem 0 0 1.2rem;
         object-fit: cover;
         height: 100%;
-
     }
     .popularcard
     {
@@ -224,7 +228,7 @@
         background-color: white;
         border-radius: 1.2rem;
         border: 0.3rem solid transparent;
-        width: 340px;
+        width: 350px;
         height: 150px;
     }
     .Pcard:hover 
@@ -234,17 +238,18 @@
     .Pcardcontainer
     {
         margin: 1rem;
+        position: static;
     }
     /*Popular Section*/
     /*Lodging Section*/
     #LODGING
     {
         padding: 1.5rem;
+        width: 100%;
     }
     #LODGING img
     {
         border-radius: 1.2rem 1.2rem 0 0;
-        width: 345px;
         height: 120px;
         object-fit: cover;
     }
@@ -281,6 +286,7 @@
     #ACTIVITY
     {
         padding: 1.5rem;
+        width: 100%;
     }
     #ACTIVITY img
     {
@@ -303,7 +309,7 @@
         transition: 0.3s;
         background-color: white;
         border-radius: 1.2rem;
-        width: 350px;
+        width: 90%px;
         height: 180px;
     }
     .Acard:hover 
@@ -328,6 +334,7 @@
         padding: 1.5rem;
         background-color: #F2F2F2;
         justify-content: space-between;
+        width: 100%;
     }
     /*footer*/
 
@@ -370,11 +377,13 @@
     .top
     {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 20% 20%;
         grid-template-rows: 100%;
+        gap: 60%;
         align-items: center;
-        padding: 2rem;
-        padding-bottom: 0rem;
+        justify-content: space-between;
+        padding: 1.5rem;
+        padding-bottom: 0;
     }
     header ul
     {
@@ -512,7 +521,7 @@
     {
         padding: 1rem;
         margin: 1rem;
-        width: 750px;
+        width: 100%;
         background-color: #F2F2F2;
         border-radius: 1.2rem;
         position: relative;
@@ -520,8 +529,8 @@
     .popular
     {
         display: flex;
-        flex-direction: row;
-        width: auto;
+        flex-wrap: wrap;
+        width:  100%;
     }
     #popular-title i
     {
@@ -538,7 +547,6 @@
         border-radius: 1.2rem 0 0 1.2rem;
         object-fit: cover;
         height: 100%;
-
     }
     .popularcard
     {
@@ -548,7 +556,9 @@
     }
     .Pcard 
     {
-        display: flex;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
         justify-content: center;
         align-content: center;
         align-items: center;
@@ -557,7 +567,7 @@
         background-color: white;
         border-radius: 1.2rem;
         border: 0.3rem solid transparent;
-        width: 340px;
+        width: 80%;
         height: 150px;
     }
     .Pcard:hover 
@@ -575,7 +585,7 @@
         background-color: #F2F2F2;
         border-radius: 1.2rem;
         width: 100%;
-        height: 750px;
+        height: 800px;
         padding: 1rem;
         margin: 1rem;
         position: relative;
@@ -585,8 +595,10 @@
     .lodging
     {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 20rem);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 13rem);
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
     }
     #LODGING img
     {
@@ -594,7 +606,6 @@
         width: 12rem;
         height: 7rem;
         object-fit: cover;
-        
     }
     .Lcard 
     {
@@ -603,9 +614,10 @@
         background-color: white;
         border-radius: 1.2rem;
         border: 0.3rem solid transparent;
-        width: 200px;
-        height: 180px;
+        width: 40%;
+        height: 200px;
         position: absolute;
+        margin: 0;
     }
     .Lcard:hover 
     {
@@ -617,12 +629,66 @@
         line-height: 3px;
     }
     /*Lodging Section*/
+        /*Activity Section*/
+        #ACTIVITY
+        {
+            padding: 1.5rem;
+            width: 100%;
+        }
+        #ACTIVITY img
+        {
+            border-radius: 1.2rem 1.2rem 0 0;
+            width: 345px;
+            height: 120px;
+            object-fit: cover;
+        }
+        .activity
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .Acard 
+        {
+            position: relative;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            background-color: white;
+            border-radius: 1.2rem;
+            width: 90%px;
+            height: 180px;
+        }
+        .Acard:hover 
+        {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .Acardcontainer
+        {
+            position: absolute;
+            align-items: center;
+            align-content: center;
+            padding-left: 1rem;
+        }
+        /*Activity Section*/
     /*Main*/
+
+     /*Footer*/
+     footer
+     {
+         display: flex;
+         padding-top: 1.5rem;
+         padding-left: 5%;
+         background-color: #F2F2F2;
+         column-gap: 15%;
+         width: 100%;
+     }
+     /*Footer*/
 }
 /*Configuration Css Tablette*/
 
 /*Configuration Css Desktop*/
-@media (min-width: 481px)
+@media (min-width: 769px)
 {
     #SignUp
     {
@@ -862,8 +928,9 @@
         background-color: white;
         border-radius: 1.2rem;
         border: 0.3rem solid transparent;
-        width: 340px;
+        width: 80%;
         height: 150px;
+        position: relative;
     }
     .Pcard:hover 
     {
@@ -871,7 +938,14 @@
     }
     .Pcardcontainer
     {
-        margin: 1rem;
+        align-content: center;
+        position: absolute;
+        left: 42%;
+        bottom: 5%;
+    }
+    #POPULAR .cardgrade
+    {
+        padding-top: 1.5rem;
     }
     /*Popular Section*/
 
@@ -892,7 +966,9 @@
     {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 20rem);
+        grid-template-rows: repeat(2, 16rem);
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
     }
     #LODGING img
     {
@@ -909,9 +985,10 @@
         background-color: white;
         border-radius: 1.2rem;
         border: 0.3rem solid transparent;
-        width: 200px;
-        height: 180px;
+        width: 28%;
+        height: 200px;
         position: absolute;
+        margin: 0;
     }
     .Lcard:hover 
     {
@@ -923,6 +1000,98 @@
         line-height: 3px;
     }
     /*Lodging Section*/
+    /*Activity Section*/
+    #ACTIVITY
+    {
+        padding: 1.5rem;
+        width: 100%;
+    }
+    #ACTIVITY img
+    {
+        border-radius: 1.2rem 1.2rem 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .activity
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 10rem 3rem 3rem 3rem 10rem;
+        column-gap: 2rem;
+        margin-bottom: 4rem;
+
+    }
+    .one
+    {
+        grid-column: 1;
+        grid-row: 1 / 6;
+    }
+    .two
+    {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+    .three
+    {
+        grid-column: 2;
+        grid-row: 5;
+    }
+    .four
+    {
+        grid-column: 3;
+        grid-row: 1 / 6;
+    }
+    .five
+    {
+        grid-column: 4;
+        grid-row: 1 ;
+    }
+    .six
+    {
+        grid-column: 4;
+        grid-row: 4 / 6;
+    }
+    .activitycard
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    .Acard 
+    {
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        background-color: white;
+        border-radius: 1.2rem;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-bottom: 4rem;
+    }
+    .Acard:hover 
+    {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    .Acardcontainer
+    {
+        align-items: center;
+        align-content: center;
+        padding-left: 1rem;
+    }
+    /*Activity Section*/
     /*Main*/
+
+    /*Footer*/
+    footer
+    {
+        display: flex;
+        padding-top: 1.5rem;
+        padding-left: 5%;
+        background-color: #F2F2F2;
+        column-gap: 15%;
+        width: 100%;
+    }
+    /*Footer*/
 }
 /*Configuration Css Desktop*/
