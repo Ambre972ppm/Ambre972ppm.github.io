@@ -598,8 +598,8 @@ a
     .lodging-container
     {
         display: grid;
-        grid-column: 100%;
-        grid-row: 50% 50%;
+        grid-column: auto;
+        grid-row: auto;
         row-gap: 1rem;
     }
     /*Popular Section*/
