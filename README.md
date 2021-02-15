@@ -1,4 +1,4 @@
-Projet 2 de la Formation Développeur Web d'Open classrooms.
+Projet 2 de la Formation Développeur Web d'Openclassrooms.
 
 Mission : Transformer une maquette en site web :
 
