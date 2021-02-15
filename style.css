@@ -1,5 +1,5 @@
 /*Configuration Css Mobile*/
-@media all and (max-width: 480px)
+@media all and (max-width: 600px)
 {
 /*General*/
 body
@@ -255,6 +255,7 @@ a
         border-radius: 1.2rem;
         border: 0.3rem solid transparent;
         height: 150px;
+        overflow: hidden;
     }
     .Pcard:hover 
     {
@@ -262,9 +263,12 @@ a
     }
     .Pcardcontainer
     {
-        margin: 1rem;
-        overflow: inherit;
-        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow-wrap: break-word;
+        width: 90%;
+        justify-content: center;
+        position: inherit;
     }
     /*Popular Section*/
     /*Lodging Section*/
@@ -383,7 +387,7 @@ a
 /*Configuration Css Mobile*/
 
 /*Configuration Css Tablette*/
-@media (min-width: 480px) and (max-width: 768px)
+@media (min-width: 601px) and (max-width: 1023px)
 {
 /*General*/
 body
@@ -598,8 +602,8 @@ a
     .lodging-container
     {
         display: grid;
-        grid-column: 100%;
-        grid-row: 50% 50%;
+        grid-column: auto;
+        grid-row: auto;
         row-gap: 1rem;
     }
     /*Popular Section*/
@@ -610,6 +614,7 @@ a
         border-radius: 1.2rem;
         justify-content: center;
         margin: auto;
+        flex-wrap: wrap;
     }
     #popular-title i
     {
@@ -618,6 +623,7 @@ a
     #popular-title
     {
         padding: 1rem;
+        padding-bottom: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -630,9 +636,7 @@ a
     }
     .popular
     {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(3, 30%);
+        display: flex;
         align-items: center;
         justify-content: center;
     }
@@ -649,7 +653,9 @@ a
         background-color: white;
         border-radius: 1.2rem;
         border: 0.3rem solid transparent;
-        height: 150px;
+        height: 170px;
+        margin: 1rem;
+        overflow: scroll;
     }
     .Pcard:hover 
     {
@@ -657,9 +663,12 @@ a
     }
     .Pcardcontainer
     {
-        margin: 1rem;
-        overflow: inherit;
-        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        overflow-wrap: break-word;
+        width: 90%;
+        justify-content: center;
+        position: inherit;
     }
     /*Popular Section*/
     /*Lodging Section*/
@@ -784,7 +793,7 @@ a
 /*Configuration Css Tablette*/
 
 /*Configuration Css Desktop*/
-@media (min-width: 769px)
+@media (min-width: 1024px)
 {
 /*General*/
 body
@@ -1067,7 +1076,7 @@ a
     {
         margin: 1rem;
         overflow: hidden;
-        width: 100%;
+        width: 90%;
         position: absolute;
         grid-column: 2;
     }
