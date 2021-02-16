@@ -233,6 +233,11 @@ a
         object-fit: cover;
         height: 100%;
     }
+    #POPULAR h4
+    {
+        max-height: 38px;
+        overflow: hidden;
+    }
     .popular
     {
         display: grid;
@@ -633,6 +638,11 @@ a
         border-radius: 1.2rem 0 0 1.2rem;
         object-fit: cover;
         height: 100%;
+    }
+    #POPULAR h4
+    {
+        max-height: 38px;
+        overflow: hidden;
     }
     .popular
     {
@@ -1042,6 +1052,11 @@ a
         object-fit: cover;
         height: 100%;
 
+    }
+    #POPULAR h4
+    {
+        max-height: 38px;
+        overflow: hidden;
     }
     .popularcard
     {
